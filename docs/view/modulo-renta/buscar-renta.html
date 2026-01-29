@@ -315,6 +315,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
+
                         <select class="form-control" id="opcionesBuscarUsuario" name="opcionesBuscarUsuario">
                             <option value="seleccion">Selecciona una opción</option>
                             <option value="localNombreUsuario">Nombre de usuario</option>
@@ -335,6 +336,15 @@
                                                 class="bi bi-search"></i></button>
                                     </div>
                                 </div>
+                                <div class="dataTables_length" id="seleccionarTamano"> <select
+                                            name="seleccionarTamano" aria-controls="sampleTable"
+                                            class="form-select form-select-sm">
+                                            <option value="10">10</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                            <option value="70">70</option>
+                                            <option value="100">100</option>
+                                        </select></label></div>
                             </div>
                         </div>
 
@@ -355,6 +365,26 @@
                                 </thead>
                                 <tbody></tbody>
                             </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-5">
+                            <div class="dataTables_info" id="seccionPagina" role="status" aria-live="polite"></div>
+                        </div>
+                        <div class="col-sm-12 col-md-7">
+                            <div class="dataTables_paginate paging_simple_numbers" id="paginacion">
+                                <ul class="pagination">
+                                    <li class="paginate_button page-item previous disabled" id="btnAnterior"><a
+                                            aria-controls="sampleTable" aria-disabled="true" aria-role="link"
+                                            data-dt-idx="previous" tabindex="0" class="page-link">Anterior</a></li>
+                                    <li class="paginate_button page-item active"><a href="#" aria-controls="sampleTable"
+                                            aria-role="link" aria-current="page" data-dt-idx="0" tabindex="0"
+                                            class="page-link"></a></li>
+                                    <li class="paginate_button page-item next" id="btnSiguiente"><a href="#"
+                                            aria-controls="sampleTable" aria-role="link" data-dt-idx="next" tabindex="0"
+                                            class="page-link">Siguiente</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

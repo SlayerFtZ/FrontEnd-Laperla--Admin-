@@ -1,0 +1,315 @@
+/**
+ * Estilos para el sistema de carga dinámica optimizada
+ * Centro Comercial La Perla
+ */
+
+/* ============================
+   LAZY LOADING STYLES
+   ============================ */
+
+/* Placeholder mientras carga la imagen */
+.image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  background-size: 200% 200%;
+  animation: shimmer 2s infinite;
+  border-radius: 15px;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Animación de shimmer para el placeholder */
+@keyframes shimmer {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Card sin imagen cargada */
+.card {
+  position: relative;
+  background-color: #2a2a2a;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Card con imagen cargada */
+.card.image-loaded {
+  animation: fadeInImage 0.5s ease;
+}
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0.7;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Card con error de carga */
+.card.image-error {
+  background-color: #1a1a1a;
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+}
+
+.card.image-error::before {
+  content: '📷';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* ============================
+   LOADING INDICATOR
+   ============================ */
+
+.loading-indicator {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.loading-indicator.active {
+  display: flex;
+  animation: slideInRight 0.3s ease;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.loading-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================
+   PERFORMANCE OPTIMIZATIONS
+   ============================ */
+
+/* Usar will-change solo cuando sea necesario */
+.card:hover {
+  will-change: transform;
+  transform: translateY(-5px);
+}
+
+/* Optimización de render */
+.swiper-slide {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ============================
+   RESPONSIVE IMPROVEMENTS
+   ============================ */
+
+@media (max-width: 850px) {
+  .image-placeholder {
+    animation-duration: 1.5s; /* Animación más rápida en móviles */
+  }
+}
+
+/* ============================
+   ACCESIBILIDAD
+   ============================ */
+
+/* Reducir animaciones para usuarios que lo prefieran */
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .image-placeholder,
+  .loading-indicator {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ============================
+   ESTADOS INTERACTIVOS
+   ============================ */
+
+/* Card en loading */
+.card[data-loading="true"] {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Card loaded exitosamente */
+.card[data-loaded="true"] {
+  cursor: pointer;
+}
+
+.card[data-loaded="true"]:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================
+   MEJORAS VISUALES
+   ============================ */
+
+/* Overlay gradient para mejor legibilidad */
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Asegurar que el contenido esté sobre el overlay */
+.card .price,
+.card .info {
+  position: relative;
+  z-index: 2;
+}
+
+/* ============================
+   SKELETON LOADING (OPCIONAL)
+   ============================ */
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 25%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.1) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ============================
+   ERROR HANDLING
+   ============================ */
+
+.error-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(220, 38, 38, 0.95);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.error-message.show {
+  display: flex;
+  animation: slideInUp 0.3s ease;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+/* ============================
+   PROGRESSIVE ENHANCEMENT
+   ============================ */
+
+/* Fallback para navegadores sin soporte de Intersection Observer */
+.no-intersection-observer .card {
+  background-image: attr(data-image url);
+}
+
+/* ============================
+   PRINT STYLES
+   ============================ */
+
+@media print {
+  .image-placeholder,
+  .loading-indicator,
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+  
+  .card {
+    page-break-inside: avoid;
+  }
+}

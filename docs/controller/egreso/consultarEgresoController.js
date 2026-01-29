@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const select = document.getElementById("opcionesBuscarEgreso");
 const input = document.getElementById("inputBusqueda");
 const tablaBody = document.querySelector("tbody");
-const urlBase = "https://laperlacentrocomercial.dyndns.org/api/pagos"; // Ajusta a tu ruta real
+const urlBase = "https://laperlacentrocomercial.dyndns.org/api/pagos";
 
 // Función reutilizable para buscar y renderizar la tabla
 function buscarEgresos() {

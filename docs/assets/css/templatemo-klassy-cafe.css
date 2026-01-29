@@ -187,12 +187,12 @@ body {
 }
 
 ::selection {
-  background: #fb5849;
+  background: rgb(223, 22, 55);
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #fb5849;
+  background: rgb(223, 22, 55);
   color: #fff;
 }
 
@@ -215,7 +215,7 @@ body {
 
 .main-white-button a {
   font-size: 13px;
-  color: #fb5849;
+  color: rgb(223, 22, 55);
   background-color: #fff;
   padding: 12px 25px;
   display: inline-block;
@@ -242,7 +242,7 @@ body {
 .section-heading h6 {
   position: relative;
   font-size: 15px;
-  color: #fb5849;
+  color: rgb(223, 22, 55);
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -256,7 +256,7 @@ body {
   position: absolute;
   left: 0;
   top: 8px;
-  background-color: #fb5849;
+  background-color: rgb(223, 22, 55);
 }
 
 .section-heading h2 {
@@ -290,11 +290,11 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #fb5849 !important;
+  color: rgb(223, 22, 55) !important;
 }
 
 .background-header .nav li a.active {
-  color: #fb5849 !important;
+  color: rgb(223, 22, 55) !important;
 }
 
 .header-area {
@@ -382,12 +382,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fb5849 !important;
+  color: rgb(223, 22, 55) !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fb5849 !important;
+  color: rgb(223, 22, 55) !important;
   opacity: 1;
 }
 
@@ -450,7 +450,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #fb5849 !important;
+  color: rgb(223, 22, 55) !important;
   padding-left: 25px;
 }
 
@@ -590,7 +590,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #fb5849;
+  color: rgb(223, 22, 55);
 }
 
 @media (max-width: 1200px) {
@@ -609,7 +609,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #fb5849 !important;
+    color: rgb(223, 22, 55) !important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -667,7 +667,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #fb5849 !important;
+    color: rgb(223, 22, 55) !important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -723,9 +723,9 @@ banner
 #top .col-lg-8 {
   padding: 0px;
 }
-
+  /* FONDO DE COLOR BANNER background-image: url(../images/top-left-bg.jpg);*/
 #top .left-content {
-  background-image: url(../images/top-left-bg.jpg);
+  background-color: rgb(223, 22, 55);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -828,7 +828,7 @@ banner
   right: 30px;
   width: 50px;
   height: 50px;
-  background-color: #fb5849;
+  background-color: rgb(223, 22, 55);
   border: 0 none;
   line-height: 44px;
   border-radius: 50%;
@@ -857,7 +857,7 @@ banner
   left: 30px;
   width: 50px;
   height: 50px;
-  background-color: #fb5849;
+  background-color: rgb(223, 22, 55);
   border: 0 none;
   line-height: 44px;
   border-radius: 50%;
@@ -1009,7 +1009,7 @@ about
   display: inline-block;
   line-height: 70px;
   text-align: center;
-  background-color: #fb5849;
+  background-color: rgb(223, 22, 55);
   color: #fff;
   border-radius: 50%;
   transform: translate(-35px, -35px);
@@ -1051,363 +1051,6 @@ menu
   height: auto; /* Mantiene la proporción original */
   object-fit: contain; /* Para asegurar que la imagen no se distorsione */
 }
-
-.card1 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 1A-1B-1C-1D\ _TORNISHOP_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card2 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 2-4\ _SONYS_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card3 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 2-4\ SONYS\ GAMES.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card4 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 5-7\ FERRETERIA\ _EL\ TORNILLITO_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card5 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 8\ _NOVEDADES_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card6 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 12\ _NOVEDADES_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card7 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 13-14\ _BIG-BURGER_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card8 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 14A\ ROPA\ CABALLERO.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card9 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 14B\ _KARLOS_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card10 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 14B\ CELLSHOP.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card11 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 15-30\ _ALFA\ Y\ OMEGA_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card12 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 16A\ _LM_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card13 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 16B\ _REGALOS\ Y\ NOVEDADES_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card14 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 16C\ NOVEDADES\ _.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card15 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 17\ _MOBITECH_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card16 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 18\ RM\ SNEAKERS.jpg);;
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card17 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 19\ _ISHOP_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card18 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 20\ _STAGE_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card19 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 21\ CHICA\ TRENDY.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card20 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 22\ OPTICAS\ LUXOR.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card21 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 23\ _ROPA\ CASUAL\ CABALLERO_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card22 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 24\ _NOVEDADES_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card23 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 26\ _HELADOS_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: 100%; /* Ocupa todo el alto del contenedor */
-  background-size: cover; /* Ajusta la imagen para cubrir el componente */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* No repite la imagen */
-  object-fit: cover; /* Para asegurar que la imagen cubra el área sin distorsión */
-}
-.card24 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 28\ _COLIBRI_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card25 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 28A\ REGALOS\ Y\ NOVEDADES.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card26 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 29\ _LA\ CREPE_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card27 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 29A\ DE\ GALLO\ 4_20.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card28 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 29B\ _COLIBRI_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card29 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 31\ _JOYERIA_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card30 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 31A\ _MAS\ TECNOLOGIA_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card31 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 32-33\ _REGALOS\ Y\ NOVEDADES.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card32 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 34\ _LENCERIA_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card33 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 35\ ROPA\ DAMAS.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card34 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 36\ ROPA\ DAMA.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card35 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 37\ ROPA\ Y\ ACCESORIOS\ DAMAS.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card36 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 38\ ROPA\ CASUAL.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card37 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 39\ _NOVEDADES_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card38 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 40\ _PADRINO\ GAMES.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card39 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 41\ _MANDALA_\ NAILS.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card40 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 42\ RM\ SNEAKERS\ KIDS.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card41 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 43\ REGALOS\ ROSSY.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card42 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 43A-43B\ _NOVEDADES_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card43 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 44-45\ _RAGATEZ_\ .jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card44 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 46-71\ ROPA\ CASUAÑ\ CABALLERO.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card45 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 47\ GRACE.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card46 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 51\ _JOYERIA_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card47 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 53\ ROPA\ CABALLERO.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card48 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 56\ _ESTETICA\ UNISEX_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card49 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 59\ BLU-CEL.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card50 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 60\ _GAME\ MASTER_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-
-.card52 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 65-65A\ _JOYERIA\ SALGADO_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card53 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 65B\ _COLORŚ_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card54 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 66-67\ _LA\ VENCEDORA_.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card55 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 68\ \ MODA\ AJEDREZ.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-.card56 {
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 71A\ ROPA\ CASUAL\ CABALLERO.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-
-.card69{
-background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 69\ cafeteria_maddona.gif);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-
-.card70{
-background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 70A.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-
-.card71{
-  background-image: url(../../assets/sourseLaperla/LOCALES/LOCAl\ 16\ BOUTIQUE\ AL-BRES.jpg);
-  width: 100%; /* La imagen será el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción original */
-  object-fit: contain; /* Para asegurar que la imagen no se distorsione */
-}
-
 
 .modal {
   display: none;
@@ -1474,8 +1117,8 @@ background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 70A.jpg);
 .info {
   position: relative;
   width: 100%;
-  background-color: #fb5849;
-  border: 1px solid #fb5849;
+  background-color: rgb(223, 22, 55);
+  border: 1px solid rgb(223, 22, 55);
   transform: translateY(100%) translateY(200px) translateZ(0);
   transition: transform 0.5s ease-out;
 }
@@ -1503,7 +1146,7 @@ background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 70A.jpg);
   position: absolute;
   width: 70px;
   height: 70px;
-  background-color: #fb5849;
+  background-color: rgb(223, 22, 55);
   font-size: 20px;
   font-weight: 700;
   color: #fff;
@@ -1547,7 +1190,7 @@ background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 70A.jpg);
 #menu .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: "FontAwesome";
-  color: #fb5849;
+  color: rgb(223, 22, 55);
   font-size: 25px;
   font-weight: 700;
   content: "\f104";
@@ -1579,7 +1222,7 @@ background-image: url(../../assets/sourseLaperla/LOCALES/LOCAL\ 70A.jpg);
 #menu .owl-nav .owl-next:before {
   display: inline-block;
   font-family: "FontAwesome";
-  color: #fb5849;
+  color: rgb(223, 22, 55);
   font-size: 25px;
   font-weight: 700;
   content: "\f105";
@@ -1616,11 +1259,11 @@ chefs
 }
 
 #chefs .chef-item:hover {
-  border-color: #fb5849;
+  border-color: rgb(223, 22, 55);
 }
 
 #chefs .chef-item:hover .down-content h4 {
-  color: #fb5849;
+  color: rgb(223, 22, 55);
 }
 
 #chefs .chef-item .thumb {
@@ -1677,7 +1320,7 @@ chefs
 }
 
 #chefs .chef-item .thumb ul.social-icons li a:hover {
-  background-color: #fb5849;
+  background-color: rgb(223, 22, 55);
 }
 
 #chefs .chef-item:hover .overlay {
@@ -1759,7 +1402,7 @@ reservation
   text-align: center;
   line-height: 70px;
   color: #fff;
-  background-color: #fb5849;
+  background-color: rgb(223, 22, 55);
   border-radius: 50%;
   font-size: 24px;
   margin-top: -35px;
@@ -1785,7 +1428,7 @@ reservation
 
 #reservation .phone span a:hover,
 #reservation .message span a:hover {
-  color: #fb5849;
+  color: rgb(223, 22, 55);
 }
 
 #contact {
@@ -1831,14 +1474,14 @@ reservation
 .contact-form input:focus,
 .contact-form textarea:focus,
 .contact-form select:focus {
-  border-color: #fb5849;
+  border-color: rgb(223, 22, 55);
 }
 
 .contact-form button {
   margin-top: -10px;
   font-size: 13px;
   color: #fff;
-  background-color: #fb5849;
+  background-color: rgb(223, 22, 55);
   padding: 12px 25px;
   width: 100%;
   box-shadow: none;
@@ -1932,7 +1575,7 @@ offers
   margin: 0 auto 15px auto;
 }
 #offers #tabs ul .ui-tabs-active a {
-  color: #fb5849;
+  color: rgb(223, 22, 55);
   position: relative;
 }
 #offers #tabs ul .ui-tabs-active span {
@@ -1982,7 +1625,7 @@ offers
   right: 0;
   width: 70px;
   height: 70px;
-  background-color: #fb5849;
+  background-color: rgb(223, 22, 55);
   display: inline-block;
   text-align: center;
   line-height: 70px;
@@ -2001,7 +1644,7 @@ footer
 footer {
   margin-top: 60px;
   padding: 50px 0px;
-  background-color: #fb5849;
+  background-color: rgb(223, 22, 55);
 }
 
 footer .left-text-content p {
@@ -2044,7 +1687,7 @@ footer .right-text-content ul li a {
   font-size: 20px;
   background-color: #fff;
   border-radius: 50%;
-  color: #fb5849;
+  color: rgb(223, 22, 55);
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -2117,7 +1760,7 @@ responsive
 
 #preloader {
   overflow: hidden;
-  background-color: #fb5849;
+  background-color: rgb(223, 22, 55);
   left: 0;
   right: 0;
   top: 0;
@@ -2273,7 +1916,7 @@ responsive
   height: 60px !important;
   border-radius: 50% !important;
   background-color: rgba(255, 255, 255, 0.288) !important;
-  color: #fb5849 !important;
+  color: rgb(223, 22, 55) !important;
   transition: all 0.3s ease !important;
   display: flex !important;
   align-items: center !important;
@@ -2305,7 +1948,7 @@ responsive
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: #fb5849 !important;
+  background-color: rgb(223, 22, 55) !important;
   color: #fff !important;
 }
 
@@ -2346,3 +1989,143 @@ responsive
   }
 }
 
+/* ============================================
+    FEBRERO
+   ============================================ */
+.modal-banner-overlay {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s ease-in;
+}
+
+.modal-banner-overlay.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-banner-content {
+    position: relative;
+    max-width: 60%;
+    max-height: 90vh;
+    animation: zoomIn 0.4s ease-out;
+}
+
+.modal-banner-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+}
+
+.modal-banner-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.6);
+    transition: all 0.3s ease;
+    z-index: 100000;
+}
+
+.modal-banner-close:hover {
+    transform: rotate(90deg) scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 107, 157, 0.8);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .modal-banner-content {
+        max-width: 95%;
+        max-height: 80vh;
+    }
+    
+    .modal-banner-close {
+        top: -10px;
+        right: -10px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .modal-banner-content img {
+        border-radius: 10px;
+    }
+}
+
+/* Versión tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .modal-banner-content {
+        max-width: 85%;
+    }
+}
+
+/* Efecto de corazones en el banner */
+.banner-heart {
+    position: absolute;
+    font-size: 30px;
+    animation: floatHeart 3s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes floatHeart {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+        opacity: 1;
+    }
+}
+/*fin del 14 de frero*/

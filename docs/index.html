@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- SEO -->
-  <meta name="description" content="Centro Comercial La Perla en Teziutlán, tradición y modernidad desde los años 80. Encuentra variedad de tiendas y servicios.">
+  <meta name="description"
+    content="Centro Comercial La Perla en Teziutlán, tradición y modernidad desde los años 80. Encuentra variedad de tiendas y servicios.">
   <meta name="author" content="Centro Comercial La Perla">
   <meta name="keywords" content="Centro Comercial, La Perla, Teziutlán, compras, tiendas, Puebla">
 
-<!-- Favicon para navegadores modernos -->
-<link rel="icon" type="image/png" sizes="16x16" href="https://laperlacentrocomercial.dyndns.org/uploads/iconoPagina1616.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://laperlacentrocomercial.dyndns.org/uploads/iconoPagina3232.png">
+  <!-- Favicon para navegadores modernos -->
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://laperlacentrocomercial.dyndns.org/uploads/iconoPagina1616.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://laperlacentrocomercial.dyndns.org/uploads/iconoPagina3232.png">
 
-<!-- Favicon para compatibilidad antigua (.ico) -->
-<link rel="icon" type="image/x-icon" href="https://laperlacentrocomercial.dyndns.org/uploads/favicon.ico">
+  <!-- Favicon para compatibilidad antigua (.ico) -->
+  <link rel="icon" type="image/x-icon" href="https://laperlacentrocomercial.dyndns.org/uploads/favicon.ico">
 
-<!-- Icono para dispositivos Apple -->
-<link rel="apple-touch-icon" sizes="180x180" href="https://laperlacentrocomercial.dyndns.org/uploads/appletouchicon.png">
-
-
+  <!-- Icono para dispositivos Apple -->
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://laperlacentrocomercial.dyndns.org/uploads/appletouchicon.png">
 
   <!-- Open Graph (para redes sociales) -->
   <meta property="og:title" content="Centro Comercial La Perla">
@@ -29,30 +32,30 @@
   <meta property="og:url" content="https://laperlacentrocomercial.dyndns.org">
   <meta property="og:type" content="website">
 
+  <!-- Preconnect para mejorar rendimiento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
   <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <title>Centro Comercial La Perla</title>
 
-
   <!-- CSS -->
-
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
   <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
   <link rel="stylesheet" href="assets/css/templatemo-klassy-cafe.css">
-
-  <!-- <link rel="stylesheet" href="assets/css/owl-carousel.css"> -->
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-
-
   <link rel="stylesheet" href="assets/css/lightbox.css">
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS Optimizado para Lazy Loading -->
+  <link rel="stylesheet" href="css/lazy-loading.css">
 
   <script type="application/ld+json">
   {
@@ -72,9 +75,7 @@
   }
   </script>
 
-
 </head>
-
 
 <body>
 
@@ -88,6 +89,11 @@
   </div>
   <!-- ***** Preloader End ***** -->
 
+  <!-- Loading Indicator (opcional) -->
+  <div class="loading-indicator" id="loadingIndicator">
+    <div class="loading-spinner"></div>
+    <span>Cargando imágenes...</span>
+  </div>
 
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
@@ -119,7 +125,28 @@
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
+  <!-- ***** Modal Banner Febrero ***** -->
+  <div class="modal-banner-overlay" id="modalBannerFebrero">
+    <div class="modal-banner-content">
+      <button class="modal-banner-close" onclick="cerrarBannerFebrero()" aria-label="Cerrar">
+        <i class="fa fa-times"></i>
+      </button>
 
+      <!-- Banner para desktop -->
+      <img src="assets/sourseLaperla/banners/febrero/banner_febrero.png"
+        alt="Promoción Febrero - Día del Amor y la Amistad" class="banner-desktop" id="bannerDesktop">
+
+      <img src="assets/sourseLaperla/banners/febrero/banner_febrero_mobile.png"
+        alt="Promoción Febrero - Día del Amor y la Amistad" class="banner-mobile" id="bannerMobile"
+        style="display: none;">
+
+      <!-- Corazones decorativos opcionales -->
+      <span class="banner-heart" style="top: 10%; left: 5%;">💖</span>
+      <span class="banner-heart" style="top: 15%; right: 5%; animation-delay: 0.5s;">💝</span>
+      <span class="banner-heart" style="bottom: 10%; left: 10%; animation-delay: 1s;">💕</span>
+      <span class="banner-heart" style="bottom: 15%; right: 10%; animation-delay: 1.5s;">💗</span>
+    </div>
+  </div>
   <!-- ***** Inicio con carrusel de imagenes ***** -->
   <div id="top">
     <div class="container-fluid">
@@ -141,7 +168,15 @@
               <!-- Item -->
               <div class="item">
                 <div class="img-fill">
-                  <img src="assets/sourseLaperla/logo-entrada.png" alt=""
+                  <img src="assets/sourseLaperla/logo-entrada.png" alt="" loading="lazy"
+                    style="width: 100%; height: 90%; object-fit: cover;">
+                </div>
+              </div>
+              <!-- // Item -->
+              <!-- Item -->
+              <div class="item">
+                <div class="img-fill">
+                  <img src="assets/sourseLaperla/laperla2.png" alt="" loading="lazy"
                     style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
               </div>
@@ -149,29 +184,21 @@
               <!-- Item -->
               <div class="item">
                 <div class="img-fill">
-                  <img src="assets/sourseLaperla/laperla2.png" alt=""
-                    style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-              </div>
-              <!-- // Item -->
-              <!-- Item -->
-              <div class="item">
-                <div class="img-fill">
-                  <img src="assets/sourseLaperla/laperla3.png" alt=""
+                  <img src="assets/sourseLaperla/laperla3.png" alt="" loading="lazy"
                     style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
               </div>
 
               <div class="item">
                 <div class="img-fill">
-                  <img src="assets/sourseLaperla/laperla5.jpeg" alt=""
+                  <img src="assets/sourseLaperla/laperla5.jpeg" alt="" loading="lazy"
                     style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
               </div>
 
               <div class="item">
                 <div class="img-fill">
-                  <img src="assets/sourseLaperla/laperla8.png" alt=""
+                  <img src="assets/sourseLaperla/laperla8.png" alt="" loading="lazy"
                     style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
               </div>
@@ -214,8 +241,8 @@
         <div class="col-lg-6">
           <div class="right-content">
             <div class="thumb">
-              <img src="assets/sourseLaperla/laperla7.png" alt="Imagen de Teziutlán" class="img-fluid"
-                style="max-height: 500px; object-fit: cover;">
+              <img src="assets/sourseLaperla/banners/febrero/promocional2.png" alt="Imagen de Teziutlán" class="img-fluid" loading="lazy"
+                style="max-height: 800px; object-fit: cover;">
             </div>
           </div>
         </div>
@@ -231,8 +258,8 @@
 
           <div class="right-content">
             <div class="thumb">
-              <img src="assets/sourseLaperla/laperla8.png" alt="Imagen de Teziutlán" class="img-fluid"
-                style="max-height: 500px; object-fit: cover;">
+              <img src="assets/sourseLaperla/banners/febrero/promocional1.png" alt="Imagen de Teziutlán"
+                class="img-fluid" loading="lazy" style="max-height: 900px; object-fit: cover;">
             </div>
           </div>
 
@@ -240,6 +267,23 @@
         <!-- Segunda Columna (Imagen) -->
         <div class="col-lg-6">
           <div class="left-text-content">
+            <div class="section-heading">
+              <h6>¿ESTE 14 DE FEBRERO NO SABES QUÉ REGALAR?</h6>
+            </div>
+
+            <p style="text-align: justify;">
+              En <strong>Centro Comercial La Perla</strong> encontrarás el regalo perfecto para sorprender a esa persona
+              especial.
+              Desde detalles únicos y moda para todos los estilos,  tecnología y gran variedad de productos,
+              La Perla reúne en un solo lugar todo lo que necesitas para celebrar el amor y la amistad.
+              <br><br>
+              Ubicado en el corazón de Teziutlán, La Perla se ha consolidado como un punto de encuentro comercial que
+              evoluciona
+              con las tendencias actuales, ofreciendo una amplia variedad de locales y servicios pensados para cada
+              ocasión.
+              Este 14 de febrero, regala momentos, emociones y experiencias inolvidables… regala <strong>La
+                Perla</strong>.
+            </p>
             <div class="section-heading">
               <h6>¿Oferta Comercial?</h6>
             </div>
@@ -278,1680 +322,201 @@
       </div>
     </div>
 
-
-
+    <!-- Carrusel optimizado - Las tarjetas se cargarán dinámicamente -->
     <div class="menu-item-carousel swiper">
       <div class="swiper-wrapper">
-
-        <!-- L-2-4 -->
-        <div class="swiper-slide">
-          <div class="card card2" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-2-4</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">SONYS GAMES<br></h1>
-              <p class="description"><br> Surtido en accesorios de video juegos y tenis. Cotiza: 231-124-0418</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-4 -->
-        <div class="swiper-slide">
-          <div class="card card4" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-5-7</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">EL TORNILLITO</h1>
-              <p class="description">Venta de material eléctrico y herramientas.
-                cotiza: 231-312-25-24 o en nuestro Correro: ferretera_el_tornillito@hotmail.com</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos</span></a>
-                    <div class="social-icons">
-                      <a href="https://www.facebook.com/ferreteria.eltornillito?locale=es_LA" target="_blank"> <i
-                          class="fab fa-facebook-f"></i></a>
-                      <!-- <a target="_blank"> <i class="fab fa-instagram"></i></a> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-5 -->
-        <div class="swiper-slide">
-          <div class="card card5" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-8</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">NOVEDADES</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-6 -->
-        <div class="swiper-slide">
-          <div class="card card6" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-12</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">NOVEDADES</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-13 -->
-        <div class="swiper-slide">
-          <div class="card card7" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-13</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">BIG BURGUER 85</h1>
-              <p class="description">Disfruta de deliciosas hamburguesas, papas a la francesa y snacks preparados al
-                momento. ¡Sabor y calidad en cada bocado!</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos</span></a>
-                    <div class="social-icons">
-                      <a href="https://www.facebook.com/profile.php?id=61564008486944" target="_blank"> <i
-                          class="fab fa-facebook-f"></i></a>
-                      <a href="https://www.instagram.com/bigburguer85/" target="_blank"> <i
-                          class="fab fa-instagram"></i></a>
-                      <a href="https://www.ubereats.com/mx/store/big-burguer-85-teziutlan/LREh00z5VKOobb7HNPLglg?srsltid=AfmBOorKqJkgb1cv7W886AHhTQqFg4t7bPn16bluLj_a9Cq5vbj_VUcq"
-                        target="_blank" title="Uber Eats">
-                        <i class="fab fa-uber"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-14A -->
-        <div class="swiper-slide">
-          <div class="card card8" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-14A</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ROPA CABALLERO</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-9 -->
-        <div class="swiper-slide">
-          <div class="card card9" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-14B</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">KARLOS</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- L-14B -->
-        <div class="swiper-slide">
-          <div class="card card10" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-14B</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">CELLSHOP</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-15 -->
-        <div class="swiper-slide">
-          <div class="card card11" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-15</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ALFA Y OMEGA</h1>
-              <p class="description">Alfa y Omega Al dia con la tecnologia venta de audio y perifoneo, cotiza:
-                231-100-65-64,
-                <br>Correo electronico: elec.alfayomega@hotmail.com
-              </p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos </span></a>
-                    <div class="social-icons">
-                      <a href="https://www.facebook.com/share/16NumjearM/?mibextid=wwXIfr" target="_blank"> <i
-                          class="fab fa-facebook-f"></i></a>
-                      <!-- <a target="_blank"> <i class="fab fa-instagram"></i></a> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-16A -->
-        <div class="swiper-slide">
-          <div class="card card71" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-16</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">BOUTIQUE AL-BRES</h1>
-              <p class="description">Trabajamos ropa de la:
-                Talla 1 a la 16 de niño y niña
-                Y contamos con ofertas y prendas de liquidacion todo el año, cotiza: 231-140-46-13</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos proximamente</span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- L-16A -->
-        <div class="swiper-slide">
-          <div class="card card12" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-16A</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">LMN</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-16B -->
-        <div class="swiper-slide">
-          <div class="card card13" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-16B</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">REGALOS Y NOVEDADES</h1>
-              <p class="description">Venta de regalos de temporada y accesorios como gorras, relojes, mochilas y
-                carteras. Servicio de arreglo y mantenimiento de relojes.<br> Cotiza: 231-325-4618</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-16C -->
-        <div class="swiper-slide">
-          <div class="card card14" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-16C</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">NOVEDADES</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-17 -->
-        <div class="swiper-slide">
-          <div class="card card15" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-17</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">MOBITECH</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-18 -->
-        <div class="swiper-slide">
-          <div class="card card16" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-18</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">RM SNEAKERS</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-19 -->
-        <div class="swiper-slide">
-          <div class="card card17" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-19</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ISHOP TEZIUTLÁN</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-20 -->
-        <div class="swiper-slide">
-          <div class="card card18" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-20</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">STAGE</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-21 -->
-        <div class="swiper-slide">
-          <div class="card card19" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-21</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">DEPORTIVO Y MODA RIVERA</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-22 -->
-        <div class="swiper-slide">
-          <div class="card card20" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-22</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">OPTICAS LUXOR</h1>
-              <p class="description">Ópticas Luxor: exámenes visuales, lentes de contacto, armazones económicos y de
-                marca, reparaciones, Contamos con laboratorio para entregas rápidas. Citas: 231-176-22-09</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos </span></a>
-                    <div class="social-icons">
-                      <a href="https://www.facebook.com/OpticasLuxorTez?mibextid=wwXIfr&mibextid=wwXIfr "
-                        target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a href="https://www.instagram.com/opticasluxortez?igsh=dDFkdnJsaTdudngx&utm_source=qr"
-                        target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- L-23 -->
-        <div class="swiper-slide">
-          <div class="card card21" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-23</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ROPA CASUAL CABALLERO</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-22 (NOVEDADES) -->
-        <div class="swiper-slide">
-          <div class="card card22" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-24</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">NOVEDADES</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-26 -->
-        <div class="swiper-slide">
-          <div class="card card23" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-26</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">HELADOS</h1>
-              <p class="description">Nos dedicamos a la venta de helados suaves y malteadas. <br>Cotiza: 231-319-81-47
-              </p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-28 -->
-        <div class="swiper-slide">
-          <div class="card card24" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-28</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">COLIBRI</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-28A -->
-        <div class="swiper-slide">
-          <div class="card card25" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-28A</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">REGALOS Y NOVEDADES TRAVIESOS</h1>
-              <p class="description">
-                Especialistas en regalos y novedades para cada temporada. Encuentra detalles únicos y originales para
-                cualquier ocasión.
-              </p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos </span></a>
-                    <div class="social-icons">
-                      <a href="https://www.facebook.com/share/16VNCxVw2Y/" target="_blank"> <i
-                          class="fab fa-facebook-f"></i></a>
-                      <!-- <a target="_blank"> <i class="fab fa-instagram"></i></a> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-29 -->
-        <div class="swiper-slide">
-          <div class="card card26" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-29</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">LA CREPE</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-29A -->
-        <div class="swiper-slide">
-          <div class="card card27" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-29A</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">DE GALLO</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-29B -->
-        <div class="swiper-slide">
-          <div class="card card28" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-29B</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">COLIBRI</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-31 -->
-        <div class="swiper-slide">
-          <div class="card card29" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-31</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">JOYERIA</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-31A -->
-        <div class="swiper-slide">
-          <div class="card card30" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-31A</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">MAS TECNOLOGIA</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-32 -->
-        <div class="swiper-slide">
-          <div class="card card31" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-32</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">REGALOS Y NOVEDADES CATESA</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-34 -->
-        <div class="swiper-slide">
-          <div class="card card34" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-34</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ROPA DE DAMA</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-34B -->
-        <div class="swiper-slide">
-          <div class="card card32" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-34B</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ROPA DE LENCERIA</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-37 -->
-        <div class="swiper-slide">
-          <div class="card card33" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-35</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ROPA DE DAMA</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-35 -->
-        <div class="swiper-slide">
-          <div class="card card35" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-37</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ROPA DE DAMA</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-38 -->
-        <div class="swiper-slide">
-          <div class="card card36" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-38</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ROPA DE CASUAL</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-37 (NOVEDADES) -->
-        <div class="swiper-slide">
-          <div class="card card37" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-39</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">NOVEDADES</h1>
-              <p class="description"><br><br>Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos proximamente</span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- L-40 -->
-        <div class="swiper-slide">
-          <div class="card card38" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-40</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">PADRINO GAMES</h1>
-              <p class="description">Venta de consolas, videojuegos, accesorios y productos gamer. Encuentra lo último
-                en entretenimiento digital.</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos</span></a>
-                    <div class="social-icons">
-                      <a href="https://www.facebook.com/share/16C8iYsKvo/?mibextid=wwXIfr" target="_blank"> <i
-                          class="fab fa-facebook-f"></i></a>
-                      <a href="https://www.instagram.com/padrinogames?igsh=bzNrYXc1YzFnbmM3&utm_source=qr"
-                        target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-41 -->
-        <div class="swiper-slide">
-          <div class="card card39" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-41</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">MANDALA NAILS 💅🏻</h1>
-              <p class="description">
-                Nail Art,
-                Gel semipermanente,
-                Recubrimiento de uña,
-                Uñas esculturales,
-                Citas con previo aviso<br>
-                231-140-43-80.</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos</span></a>
-                    <div class="social-icons">
-                      <!-- <a target="_blank"> <i class="fab fa-facebook-f"></i></a> -->
-                      <a href="https://www.instagram.com/mandala.nails23?utm_source=qr&igsh=MXF4eXNjZXoyMHhucQ=="
-                        target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-40 (RM SNEAKERS KIDS) -->
-        <div class="swiper-slide">
-          <div class="card card40" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-42</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">RM SNEAKERS KIDS</h1>
-              <p class="description"><BR><BR>Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- L-43 -->
-        <div class="swiper-slide">
-          <div class="card card41" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-43</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">REGALOS ROSSY</h1>
-              <p class="description">
-                Ofrecemos una amplia variedad de regalos de temporada para todas las ocasiones.
-                Productos de calidad Cotiza: 231-154-47-58</a>
-              </p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-43A -->
-        <div class="swiper-slide">
-          <div class="card card42" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-43A</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">NOVEDADES</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-45 -->
-        <div class="swiper-slide">
-          <div class="card card43" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-45</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">NOVEDADES VICTORIA</h1>
-              <p class="description">Nos dedicamos a la venta de regalos y novedades de todas las edades
-                Cotiza: ram.luca@hotmail.com
-              </p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-47 -->
-        <div class="swiper-slide">
-          <div class="card card45" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-47</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">GRACE</h1>
-              <p class="description">Venta de articulos para dama y caballero.<br>Encuentra accesorios para toda
-                ocasión. Atención personalizada y productos de calidad.</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos</span></a>
-                    <div class="social-icons">
-                      <a href="https://www.facebook.com/share/1Ec8w7qkLB/?mibextid=wwXIfr" target="_blank"> <i
-                          class="fab fa-facebook-f"></i></a>
-                      <!-- <a href
-            <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-            <div class="social-icons">
-              <a href="https://www.facebook.com/share/1Ec8w7qkLB/?mibextid=wwXIfr" target="_blank"> <i
-                class="fab fa-facebook-f"></i></a>
-              <!-- <a target="_blank"> <i class="fab fa-instagram"></i></a> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-50 -->
-        <div class="swiper-slide">
-          <div class="card card46" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-50</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">MARIFLOR JOYAS</h1>
-              <p class="description">Mayoreo, Menudeo y Consignación en joyería.Cotiza: 231-112-07-71 <br> 231-129-50-78
-              </p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-53 -->
-        <div class="swiper-slide">
-          <div class="card card47" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-53</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ROPA CASUAL EL 53</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-56 -->
-        <div class="swiper-slide">
-          <div class="card card48" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-56</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ESTETICA UNISEX NEVILL</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-59 -->
-        <div class="swiper-slide">
-          <div class="card card49" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-59</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">BLU-CEL</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-60 -->
-        <div class="swiper-slide">
-          <div class="card card50" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-60</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">GAME MASTER</h1>
-              <p class="description">Venta de electronica</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-65 -->
-        <div class="swiper-slide">
-          <div class="card card52" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-65</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">JOYERIA SALGADO</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-65B -->
-        <div class="swiper-slide">
-          <div class="card card53" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-65B</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">COLORS JOYERIA</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-67 -->
-        <div class="swiper-slide">
-          <div class="card card54" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-67</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">LA VENCEDORA</h1>
-              <p class="description"><br>Ofrecemos una alta variedad de calzado para caballero y un alto surtido en
-                tenis.
-              </p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-68 -->
-        <div class="swiper-slide">
-          <div class="card card55" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-68</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">MODA AJEDREZ</h1>
-              <p class="description">Nos dedicamos a la venta de ropa de temporada para dama. <br>Cotiza: 231-319-81-47
-              </p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos proximamente</span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-69 -->
-        <div class="swiper-slide">
-          <div class="card card69" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-69</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">FUENTE DE SODAS MADONA</h1>
-              <p class="description">Creando Recuerdos...<br>3 Decadas Servicio y Tradicion para su Deleite<br>
-                Cotiza:cafeteria.madonna@gmail.com</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos</span></a>
-                    <div class="social-icons">
-                      <a href="https://www.facebook.com/profile.php?id=100063765334524" target="_blank"> <i
-                          class="fab fa-facebook-f"></i></a>
-                      <!-- <a target="_blank"> <i class="fab fa-instagram"></i></a> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-70A -->
-        <div class="swiper-slide">
-          <div class="card card70" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-70A</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">JOYERIA LA PERLA</h1>
-              <p class="description">Ofrecemos joyería fina en oro laminado de 18k: anillos, aretes, cadenas y más.
-                Contamos con sistema de apartado y pagos con tarjeta.</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos</span></a>
-                    <div class="social-icons">
-                      <a href="https://www.facebook.com/share/1KS5pZuNGi/" target="_blank"> <i
-                          class="fab fa-facebook-f"></i></a>
-                      <!-- <a target="_blank"> <i class="fab fa-instagram"></i></a> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-71 -->
-        <div class="swiper-slide">
-          <div class="card card44" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-71</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">XTREME Moda Actual</h1>
-              <p class="description">Ofrecemos una amplia variedad de ropa para caballero, con tendencia en
-                moda y estilos para todas las ocasiones Calidad y comodidad.</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text">🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- L-56 (ROPA CASUAL CABALLERO) -->
-        <div class="swiper-slide">
-          <div class="card card56" onclick="mostrarModal(this)">
-            <div class="price">
-              <h6>L-71A</h6>
-            </div>
-            <div class="info">
-              <h1 class="title">ROPA CASUAL CABALLERO</h1>
-              <p class="description">Centro Comercial La Perla</p>
-              <div class="main-text-button">
-                <div class="scroll-to-section">
-                  <div class="btn-redes-container">
-                    <a class="btn-redes"><span class="btn-text"><br><br>🌐 Visítanos proximamente </span></a>
-                    <div class="social-icons">
-                      <a target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank"> <i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div> <!-- .swiper-wrapper -->
+        <!-- Las tarjetas se cargarán aquí dinámicamente mediante JavaScript -->
+        <!-- El contenido se genera desde data/locales.json -->
+      </div>
 
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
 
+  </section>
+  <!-- ***** Menu Area Ends ***** -->
 
-    <!-- ***** Menu Area Ends ***** -->
-
-    <!-- ***** Mapa de ubicacion del centro comercial ***** -->
-    <section class="section" id="chefs">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 offset-lg-4 text-center">
-            <div class="section-heading">
-              <h6>Donde nos ubicamos</h6>
-              <h2>Te ubicamos en el mapa nuestra dirección</h2>
-            </div>
+  <!-- ***** Mapa de ubicacion del centro comercial ***** -->
+  <section class="section" id="chefs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4 text-center">
+          <div class="section-heading">
+            <h6>Donde nos ubicamos</h6>
+            <h2>Te ubicamos en el mapa nuestra dirección</h2>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-12">
-            <div class="tile">
-              <div class="ratio ratio-16x9">
-                <div id="map" style="height: 400px; width: 100%;"></div>
-              </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="tile">
+            <div class="ratio ratio-16x9">
+              <div id="map" style="height: 400px; width: 100%;"></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- ***** Chefs Area Ends ***** -->
-
-    <!-- ***** Reservation Us Area Starts ***** -->
-    <section class="section" id="reservation">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 align-self-center">
-            <div class="left-text-content">
-              <div class="section-heading">
-                <h6>Contactanos</h6>
-                <h2>Puedes contactarnos por medio de nuestro correo electrónico o por medio de red telefónica</h2>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="phone">
-                    <i class="fa fa-phone"></i>
-                    <h4>Numero de telefono</h4>
-                    <span><a href="#">+52 231-312-45-50</a><br></span>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="message">
-                    <i class="fa fa-envelope"></i>
-                    <h4>Correo Electronico</h4>
-                    <span><a href="#"> cclaperla.oficina@gmail.com</a><br></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br>
-          </div>
-          <!-- Agregar la columna para el item de la segunda columna -->
-          <div class="col-lg-6">
-            <div class="item">
-              <div class="card card-Contacto">
-                <div class="price">
-                </div>
-                <div class="info">
-                  <h1 class="title">Centro Comercial La Perla</h1>
-                    <p class="description" style="text-align: justify;">La Perla se encuentra en una
-                    ubicación privilegiada, justo debajo
-                    de la Plaza Cívica y a un costado de la Catedral de Teziutlán. Esta ubicación
-                    central la convierte en un punto de encuentro tradicional para los habitantes de la
-                    ciudad y visitantes, facilitando el acceso a una variedad de comercios y servicios.
-                    </p>
-                  <div class="main-text-button">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** Reservation Area Ends ***** -->
-
-
-    <!-- ***** Footer Start ***** -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-xs-12">
-            <div class="right-text-content">
-              <ul class="social-icons">
-                <li style="display: flex; align-items: center;">
-                  <a href="https://www.facebook.com/c.comerciallaperla" target="_blank"
-                    style="margin-right: 25px; padding: 10px; border-radius: 50%; background-color: #4174d8; color: white; display: inline-flex; align-items: center; justify-content: center;">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-
-                  <p style="margin: 0;">Visita nuestras redes sociales</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4">
-          </div>
-          <div class="col-lg-4 col-xs-12">
-            <div class="left-text-content">
-              <p>© Derechos Reservados
-                <br> Centro Comercial La Perla.
-                <br>Design: Plataforma WEB
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div id="modal" class="modal" onclick="cerrarModal(event)">
-      <span class="cerrar" onclick="cerrarModal()">&times;</span>
-      <div class="modal-content" id="imagenModal"></div>
     </div>
+  </section>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+  <!-- ***** Chefs Area Ends ***** -->
 
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+  <!-- ***** Reservation Us Area Starts ***** -->
+  <section class="section" id="reservation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="left-text-content">
+            <div class="section-heading">
+              <h6>Contactanos</h6>
+              <h2>Puedes contactarnos por medio de nuestro correo electrónico o por medio de red telefónica</h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="phone">
+                  <i class="fa fa-phone"></i>
+                  <h4>Numero de telefono</h4>
+                  <span><a href="#">+52 231-312-45-50</a><br></span>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="message">
+                  <i class="fa fa-envelope"></i>
+                  <h4>Correo Electronico</h4>
+                  <span><a href="#"> cclaperla.oficina@gmail.com</a><br></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+        <!-- Agregar la columna para el item de la segunda columna -->
+        <div class="col-lg-6">
+          <div class="item">
+            <div class="card card-Contacto">
+              <div class="price">
+              </div>
+              <div class="info">
+                <h1 class="title">Centro Comercial La Perla</h1>
+                <p class="description" style="text-align: justify;">La Perla se encuentra en una
+                  ubicación privilegiada, justo debajo
+                  de la Plaza Cívica y a un costado de la Catedral de Teziutlán. Esta ubicación
+                  central la convierte en un punto de encuentro tradicional para los habitantes de la
+                  ciudad y visitantes, facilitando el acceso a una variedad de comercios y servicios.
+                </p>
+                <div class="main-text-button">
 
-    <!-- Plugins -->
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/accordions.js"></script>
-    <script src="assets/js/datepicker.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/isotope.js"></script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-    <script>
+  <!-- ***** Reservation Area Ends ***** -->
 
-      $(function () {
-        var selectedClass = "";
-        $("p").click(function () {
-          selectedClass = $(this).attr("data-rel");
-          $("#portfolio").fadeTo(50, 0.1);
-          $("#portfolio div").not("." + selectedClass).fadeOut();
-          setTimeout(function () {
-            $("." + selectedClass).fadeIn();
-            $("#portfolio").fadeTo(50, 1);
-          }, 500);
 
-        });
+  <!-- ***** Footer Start ***** -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-xs-12">
+          <div class="right-text-content">
+            <ul class="social-icons">
+              <li style="display: flex; align-items: center;">
+                <a href="https://www.facebook.com/c.comerciallaperla" target="_blank"
+                  style="margin-right: 25px; padding: 10px; border-radius: 50%; background-color: #4174d8; color: white; display: inline-flex; align-items: center; justify-content: center;">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <p style="margin: 0;">Visita nuestras redes sociales</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-4 col-xs-12">
+          <div class="left-text-content">
+            <p>© Derechos Reservados
+              <br> Centro Comercial La Perla.
+              <br>Design: Plataforma WEB
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal para imágenes -->
+  <div id="modal" class="modal" onclick="cerrarModal(event)">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <div class="modal-content" id="imagenModal"></div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/accordions.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/imgfix.min.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/isotope.js"></script>
+
+  <!-- Global Init -->
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(function () {
+      var selectedClass = "";
+      $("p").click(function () {
+        selectedClass = $(this).attr("data-rel");
+        $("#portfolio").fadeTo(50, 0.1);
+        $("#portfolio div").not("." + selectedClass).fadeOut();
+        setTimeout(function () {
+          $("." + selectedClass).fadeIn();
+          $("#portfolio").fadeTo(50, 1);
+        }, 500);
+
       });
-    </script>
-    <script src="js/plugins/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    });
+  </script>
 
-    <script>
-      var map = L.map('map').setView([19.817114965266097, -97.35986734768879], 15);
+  <!-- Leaflet para mapas -->
+  <script src="js/plugins/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '© OpenStreetMap'
-      }).addTo(map);
+  <script>
+    var map = L.map('map').setView([19.817114965266097, -97.35986734768879], 15);
 
-      // Solo muestra el marcador de La Perla
-      var Laperla = L.marker([19.817114965266097, -97.35986734768879])
-        .bindPopup('Centro comercial La Perla, Av. Benito Juárez S/N, Centro, 73800 Teziutlán, Pue.')
-        .addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
 
-    </script>
+    // Solo muestra el marcador de La Perla
+    var Laperla = L.marker([19.817114965266097, -97.35986734768879])
+      .bindPopup('Centro comercial La Perla, Av. Benito Juárez S/N, Centro, 73800 Teziutlán, Pue.')
+      .addTo(map);
+  </script>
 
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script>
-      function mostrarModal(card) {
-        const backgroundImage = window.getComputedStyle(card).backgroundImage;
-        const modalContent = document.getElementById("imagenModal");
-        modalContent.style.backgroundImage = backgroundImage;
-
-        const modal = document.getElementById("modal");
-        modal.style.display = "flex";
-      }
-
-      function cerrarModal() {
-        const modal = document.getElementById("modal");
-        modal.style.display = "none";
-      }
-    </script>
-
-    <script>
-      const swiper = new Swiper('.swiper', {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 20,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-        autoplay: {
-          delay: 9000,
-          disableOnInteraction: false
-        },
-        breakpoints: {
-          // cuando la pantalla sea menor o igual a 768px
-          850: {
-            slidesPerView: 3
-          }
-        }
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const cards = document.querySelectorAll(".card");
-
-        // 1. Guardamos el nombre de la clase (ej: 'card1') en un atributo y se la quitamos
-        cards.forEach(card => {
-          const classList = Array.from(card.classList);
-          const bgClass = classList.find(c => c.startsWith('card') && c !== 'card');
-          if (bgClass) {
-            card.dataset.bgClass = bgClass;
-            card.classList.remove(bgClass); // se la quitamos temporalmente
-          }
-        });
-
-        // 2. Observador para cargar fondo cuando entra a pantalla
-        const observer = new IntersectionObserver((entries, obs) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const card = entry.target;
-              const bgClass = card.dataset.bgClass;
-              if (bgClass) {
-                card.classList.add(bgClass); // restauramos la clase que pone el background
-                delete card.dataset.bgClass; // opcional
-                obs.unobserve(card); // ya no necesitamos observarla
-              }
-            }
-          });
-        }, {
-          rootMargin: "200px", // carga un poco antes de que sea visible
-          threshold: 0.1
-        });
-
-        // 3. Observar todas las tarjetas
-        cards.forEach(card => {
-          observer.observe(card);
-        });
-      });
-
-    </script>
-
+  <!-- Swiper -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/jsFebrero.js"></script>
+  <!-- Sistema de carga dinámica optimizado -->
+  <script src="js/locales-manager.js"></script>
 
 </body>
 

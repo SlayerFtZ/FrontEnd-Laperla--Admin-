@@ -1,0 +1,677 @@
+{
+  "locales": [
+    {
+      "id": "L-2-4",
+      "numero": "L-2-4",
+      "nombre": "SONYS GAMES",
+      "descripcion": "Surtido en accesorios de video juegos y tenis. Cotiza: 231-124-0418",
+      "imagen": "assets/sourseLaperla/Local/local_2-4__sonys_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-5-7",
+      "numero": "L-5-7",
+      "nombre": "EL TORNILLITO",
+      "descripcion": "Venta de material eléctrico y herramientas. cotiza: 231-312-25-24 o en nuestro Correro: ferretera_el_tornillito@hotmail.com",
+      "imagen": "assets/sourseLaperla/Local/local_5-7_ferreteria__el_tornillito_.jpg",
+      "redesSociales": {
+        "facebook": "https://www.facebook.com/ferreteria.eltornillito?locale=es_LA",
+        "instagram": ""
+      },
+      "disponible": true
+    },
+    {
+      "id": "L-8",
+      "numero": "L-8",
+      "nombre": "NOVEDADES",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_8__novedades_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-12",
+      "numero": "L-12",
+      "nombre": "NOVEDADES",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_12__novedades_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-13",
+      "numero": "L-13",
+      "nombre": "BIG BURGUER 85",
+      "descripcion": "Disfruta de deliciosas hamburguesas, papas a la francesa y snacks preparados al momento. ¡Sabor y calidad en cada bocado!",
+      "imagen": "assets/sourseLaperla/Local/local_13-14__big-burger_.jpg",
+      "redesSociales": {
+        "facebook": "https://www.facebook.com/profile.php?id=61564008486944",
+        "instagram": "https://www.instagram.com/bigburguer85/",
+        "uber": "https://www.ubereats.com/mx/store/big-burguer-85-teziutlan/LREh00z5VKOobb7HNPLglg?srsltid=AfmBOorKqJkgb1cv7W886AHhTQqFg4t7bPn16bluLj_a9Cq5vbj_VUcq"
+      },
+      "disponible": true
+    },
+    {
+      "id": "L-14A",
+      "numero": "L-14A",
+      "nombre": "ROPA CABALLERO",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_14a_ropa_caballero.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-14B-KARLOS",
+      "numero": "L-14B",
+      "nombre": "KARLOS",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_14b__karlos_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-14B-CELLSHOP",
+      "numero": "L-14B",
+      "nombre": "CELLSHOP",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_14b_cellshop.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-15",
+      "numero": "L-15",
+      "nombre": "ALFA Y OMEGA",
+      "descripcion": "Alfa y Omega Al dia con la tecnologia venta de audio y perifoneo, cotiza: 231-100-65-64, Correo electronico: elec.alfayomega@hotmail.com",
+      "imagen": "assets/sourseLaperla/Local/local_15-30__alfa_y_omega_.jpg",
+      "redesSociales": {
+        "facebook": "https://www.facebook.com/share/16NumjearM/?mibextid=wwXIfr",
+        "instagram": ""
+      },
+      "disponible": true
+    },
+    {
+      "id": "L-16",
+      "numero": "L-16",
+      "nombre": "BOUTIQUE AL-BRES",
+      "descripcion": "Trabajamos ropa de la: Talla 1 a la 16 de niño y niña Y contamos con ofertas y prendas de liquidacion todo el año, cotiza: 231-140-46-13",
+      "imagen": "assets/sourseLaperla/Local/local_16_boutique_al-bres.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-16A",
+      "numero": "L-16A",
+      "nombre": "LMN",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_16a__lm_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-16B",
+      "numero": "L-16B",
+      "nombre": "REGALOS Y NOVEDADES",
+      "descripcion": "Venta de regalos de temporada y accesorios como gorras, relojes, mochilas y carteras. Servicio de arreglo y mantenimiento de relojes. Cotiza: 231-325-4618",
+      "imagen": "assets/sourseLaperla/Local/local_16b__regalos_y_novedades_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-16C",
+      "numero": "L-16C",
+      "nombre": "NOVEDADES",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_16c_novedades__.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-17",
+      "numero": "L-17",
+      "nombre": "MOBITECH",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_17__mobitech_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-18",
+      "numero": "L-18",
+      "nombre": "RM SNEAKERS",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_18_rm_sneakers.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-19",
+      "numero": "L-19",
+      "nombre": "ISHOP TEZIUTLÁN",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_19__ishop_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-20",
+      "numero": "L-20",
+      "nombre": "STAGE",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_20__stage_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-21",
+      "numero": "L-21",
+      "nombre": "DEPORTIVO Y MODA RIVERA",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_21_chica_trendy.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-22",
+      "numero": "L-22",
+      "nombre": "OPTICAS LUXOR",
+      "descripcion": "Ópticas Luxor: exámenes visuales, lentes de contacto, armazones económicos y de marca, reparaciones, Contamos con laboratorio para entregas rápidas. Citas: 231-176-22-09",
+      "imagen": "assets/sourseLaperla/Local/local_22_opticas_luxor.jpg",
+      "redesSociales": {
+        "facebook": "https://www.facebook.com/OpticasLuxorTez?mibextid=wwXIfr&mibextid=wwXIfr",
+        "instagram": "https://www.instagram.com/opticasluxortez?igsh=dDFkdnJsaTdudngx&utm_source=qr"
+      },
+      "disponible": true
+    },
+    {
+      "id": "L-23",
+      "numero": "L-23",
+      "nombre": "ROPA CASUAL CABALLERO",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_23__ropa_casual_caballero_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-24",
+      "numero": "L-24",
+      "nombre": "NOVEDADES",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_24__novedades_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-26",
+      "numero": "L-26",
+      "nombre": "HELADOS",
+      "descripcion": "Nos dedicamos a la venta de helados suaves y malteadas. Cotiza: 231-319-81-47",
+      "imagen": "assets/sourseLaperla/Local/local_26__helados_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-28",
+      "numero": "L-28",
+      "nombre": "COLIBRI",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_28__colibri_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-28A",
+      "numero": "L-28A",
+      "nombre": "REGALOS Y NOVEDADES TRAVIESOS",
+      "descripcion": "Especialistas en regalos y novedades para cada temporada. Encuentra detalles únicos y originales para cualquier ocasión.",
+      "imagen": "assets/sourseLaperla/Local/local_28a_regalos_y_novedades.jpg",
+      "redesSociales": {
+        "facebook": "https://www.facebook.com/share/16VNCxVw2Y/",
+        "instagram": ""
+      },
+      "disponible": true
+    },
+    {
+      "id": "L-29",
+      "numero": "L-29",
+      "nombre": "LA CREPE",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_29__la_crepe_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-29A",
+      "numero": "L-29A",
+      "nombre": "DE GALLO",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_29a_de_gallo_4_20.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-29B",
+      "numero": "L-29B",
+      "nombre": "COLIBRI",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_29b__colibri_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-31",
+      "numero": "L-31",
+      "nombre": "JOYERIA",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_31__joyeria_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-31A",
+      "numero": "L-31A",
+      "nombre": "MAS TECNOLOGIA",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_31a__mas_tecnologia_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-32",
+      "numero": "L-32",
+      "nombre": "REGALOS Y NOVEDADES CATESA",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_32-33__regalos_y_novedades.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-34",
+      "numero": "L-34",
+      "nombre": "ROPA DE DAMA",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_36_ropa_dama.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-34B",
+      "numero": "L-34B",
+      "nombre": "ROPA DE LENCERIA",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_34__lenceria_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-35",
+      "numero": "L-35",
+      "nombre": "ROPA DE DAMA",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_35_ropa_damas.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-37",
+      "numero": "L-37",
+      "nombre": "ROPA DE DAMA",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_37_ropa_y_accesorios_damas.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-38",
+      "numero": "L-38",
+      "nombre": "ROPA DE CASUAL",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_38_ropa_casual.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-39",
+      "numero": "L-39",
+      "nombre": "NOVEDADES",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_39__novedades_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-40",
+      "numero": "L-40",
+      "nombre": "PADRINO GAMES",
+      "descripcion": "Venta de consolas, videojuegos, accesorios y productos gamer. Encuentra lo último en entretenimiento digital.",
+      "imagen": "assets/sourseLaperla/Local/local_40__padrino_games.jpg",
+      "redesSociales": {
+        "facebook": "https://www.facebook.com/share/16C8iYsKvo/?mibextid=wwXIfr",
+        "instagram": "https://www.instagram.com/padrinogames?igsh=bzNrYXc1YzFnbmM3&utm_source=qr"
+      },
+      "disponible": true
+    },
+    {
+      "id": "L-41",
+      "numero": "L-41",
+      "nombre": "MANDALA NAILS 💅🏻",
+      "descripcion": "Nail Art, Gel semipermanente, Recubrimiento de uña, Uñas esculturales, Citas con previo aviso 231-140-43-80.",
+      "imagen": "assets/sourseLaperla/Local/local_41__mandala__nails.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": "https://www.instagram.com/mandala.nails23?utm_source=qr&igsh=MXF4eXNjZXoyMHhucQ=="
+      },
+      "disponible": true
+    },
+    {
+      "id": "L-42",
+      "numero": "L-42",
+      "nombre": "RM SNEAKERS KIDS",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_42_rm_sneakers_kids.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-43",
+      "numero": "L-43",
+      "nombre": "REGALOS ROSSY",
+      "descripcion": "Ofrecemos una amplia variedad de regalos de temporada para todas las ocasiones. Productos de calidad Cotiza: 231-154-47-58",
+      "imagen": "assets/sourseLaperla/Local/local_43_regalos_rossy.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-43A",
+      "numero": "L-43A",
+      "nombre": "NOVEDADES",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_43a-43b__novedades_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-45",
+      "numero": "L-45",
+      "nombre": "NOVEDADES VICTORIA",
+      "descripcion": "Nos dedicamos a la venta de regalos y novedades de todas las edades Cotiza: ram.luca@hotmail.com",
+      "imagen": "assets/sourseLaperla/Local/local_44-45__ragatez__.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-47",
+      "numero": "L-47",
+      "nombre": "GRACE",
+      "descripcion": "Venta de articulos para dama y caballero. Encuentra accesorios para toda ocasión. Atención personalizada y productos de calidad.",
+      "imagen": "assets/sourseLaperla/Local/local_47_grace.jpg",
+      "redesSociales": {
+        "facebook": "https://www.facebook.com/share/1Ec8w7qkLB/?mibextid=wwXIfr",
+        "instagram": ""
+      },
+      "disponible": true
+    },
+    {
+      "id": "L-50",
+      "numero": "L-50",
+      "nombre": "MARIFLOR JOYAS",
+      "descripcion": "Mayoreo, Menudeo y Consignación en joyería.Cotiza: 231-112-07-71 231-129-50-78",
+      "imagen": "assets/sourseLaperla/Local/local_51__joyeria_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-53",
+      "numero": "L-53",
+      "nombre": "ROPA CASUAL EL 53",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_53_ropa_caballero.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-56",
+      "numero": "L-56",
+      "nombre": "ESTETICA UNISEX NEVILL",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_56__estetica_unisex_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-59",
+      "numero": "L-59",
+      "nombre": "BLU-CEL",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_59_blu-cel.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-60",
+      "numero": "L-60",
+      "nombre": "GAME MASTER",
+      "descripcion": "Venta de electronica",
+      "imagen": "assets/sourseLaperla/Local/local_60__game_master_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-65",
+      "numero": "L-65",
+      "nombre": "JOYERIA SALGADO",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_65-65a__joyeria_salgado_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-65B",
+      "numero": "L-65B",
+      "nombre": "COLORS JOYERIA",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_65b__colorś_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-67",
+      "numero": "L-67",
+      "nombre": "LA VENCEDORA",
+      "descripcion": "Ofrecemos una alta variedad de calzado para caballero y un alto surtido en tenis.",
+      "imagen": "assets/sourseLaperla/Local/local_66-67__la_vencedora_.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-68",
+      "numero": "L-68",
+      "nombre": "MODA AJEDREZ",
+      "descripcion": "Nos dedicamos a la venta de ropa de temporada para dama. Cotiza: 231-319-81-47",
+      "imagen": "assets/sourseLaperla/Local/local_68__moda_ajedrez.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-69",
+      "numero": "L-69",
+      "nombre": "FUENTE DE SODAS MADONA",
+      "descripcion": "Creando Recuerdos... 3 Decadas Servicio y Tradicion para su Deleite Cotiza:cafeteria.madonna@gmail.com",
+      "imagen": "assets/sourseLaperla/Local/local_69_cafeteria_maddona.gif",
+      "redesSociales": {
+        "facebook": "https://www.facebook.com/profile.php?id=100063765334524",
+        "instagram": ""
+      },
+      "disponible": true
+    },
+    {
+      "id": "L-70A",
+      "numero": "L-70A",
+      "nombre": "JOYERIA LA PERLA",
+      "descripcion": "Ofrecemos joyería fina en oro laminado de 18k: anillos, aretes, cadenas y más. Contamos con sistema de apartado y pagos con tarjeta.",
+      "imagen": "assets/sourseLaperla/Local/local_70a.jpg",
+      "redesSociales": {
+        "facebook": "https://www.facebook.com/share/1KS5pZuNGi/",
+        "instagram": ""
+      },
+      "disponible": true
+    },
+    {
+      "id": "L-71",
+      "numero": "L-71",
+      "nombre": "XTREME Moda Actual",
+      "descripcion": "Ofrecemos una amplia variedad de ropa para caballero, con tendencia en moda y estilos para todas las ocasiones Calidad y comodidad.",
+      "imagen": "assets/sourseLaperla/Local/local_46-71_ropa_casuañ_caballero.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    },
+    {
+      "id": "L-71A",
+      "numero": "L-71A",
+      "nombre": "ROPA CASUAL CABALLERO",
+      "descripcion": "Centro Comercial La Perla",
+      "imagen": "assets/sourseLaperla/Local/local_71a_ropa_casual_caballero.jpg",
+      "redesSociales": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "disponible": false
+    }
+  ]
+}

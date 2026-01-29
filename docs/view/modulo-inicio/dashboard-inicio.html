@@ -306,10 +306,53 @@
         <p>"SISTEMA DE ADMINISTRACION DEL CENTRO COMERCIAL LA PERLA"</p>
       </div>
       <ul class="app-breadcrumb breadcrumb">
+        
         <li class="breadcrumb-item"><i class="bi bi-house-door fs-6"></i></li>
         <li class="breadcrumb-item"><a href="../modulo-inicio/dashboard-inicio.html">Inicio</a></li>
       </ul>
     </div>
+    <div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Filtros de Consulta</h5>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <label for="selectMes" class="form-label">Mes</label>
+                        <select class="form-select" id="selectMes">
+                            <option value="1">Enero</option>
+                            <option value="2">Febrero</option>
+                            <option value="3">Marzo</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Mayo</option>
+                            <option value="6">Junio</option>
+                            <option value="7">Julio</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Septiembre</option>
+                            <option value="10">Octubre</option>
+                            <option value="11">Noviembre</option>
+                            <option value="12">Diciembre</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="selectAnio" class="form-label">Año</label>
+                        <select class="form-select" id="selectAnio">
+                            <!-- Se llenará dinámicamente -->
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-primary" id="btnFiltrar">
+                            <i class="bi bi-search"></i> Consultar
+                        </button>
+                        <button class="btn btn-secondary" id="btnResetear">
+                            <i class="bi bi-arrow-clockwise"></i> Resetear
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="row">
       <div class="col-md-6 col-lg-3">
 
